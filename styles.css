@@ -54,6 +54,33 @@ nav {
     text-underline-offset: 7px;
 }
 
+.btn-register {
+    background: #fdc533;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    transition:
+        color 0.15s,
+        background 0.15s,
+        box-shadow 0.15s,
+        transform 0.1s;
+    font-size: 1.2rem;
+    /* Increased font size */
+    padding: 0.65rem 1.8rem;
+    /* Increased padding */
+}
+
+.btn-register:hover,
+.btn-register:focus {
+    background: #fff;
+    color: #fdc533;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px) scale(1.01);
+    border-color: #fdc533;
+}
+
 
 
 /* --- Home Section --- */
@@ -166,6 +193,28 @@ nav {
     color: #333;
 }
 
+.faq-list .mb-4 {
+    border-bottom: 1px solid #ffe082;
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.faq-list strong {
+    font-size: 1.2rem;
+    color: black;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.faq-list p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
 .site-footer-social {
     padding-bottom: 2rem !important;
 }
@@ -179,6 +228,25 @@ nav {
     color: black;
 }
 
+.footer-contact {
+    font-size: 0.95rem;
+    color: black;
+    font-family: 'Exo';
+}
+
+.footer-contact a {
+    color: black;
+    text-decoration: underline;
+    display: block;
+}
+
+.footnote {
+    font-size: 0.75rem;
+    color: black;
+    margin-top: 1rem;
+    font-style: italic;
+    font-family: 'Exo';
+}
 
 
 /* --- Contact section --- */
