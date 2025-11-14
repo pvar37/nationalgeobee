@@ -178,18 +178,33 @@ nav {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+.team-photo-smaller {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 .team-bio {
     font-size: 0.95rem;
     line-height: 1.6;
     text-align: center;
 }
 
-.team-bio a {
+.team-bio-smaller {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.team-bio a, .team-bio-smaller a {
     color: #000;
     text-decoration: underline;
 }
 
-.team-bio a:hover {
+.team-bio a:hover, .team-bio-smaller a:hover {
     color: #333;
 }
 
@@ -243,9 +258,11 @@ nav {
 .footnote {
     font-size: 0.75rem;
     color: black;
-    margin-top: 1rem;
+    margin: 1rem auto;
     font-style: italic;
     font-family: 'Exo';
+    width: 90%;
+    max-width: 900px;
 }
 
 
