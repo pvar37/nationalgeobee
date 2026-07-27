@@ -20,16 +20,28 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <style>
+        .accordion-button:not(.collapsed) {
+            background-color: #ffe28a;
+            color: #000;
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, .125);
+        }
+    </style>
 </head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRHD95BBBP"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-PRHD95BBBP');
+    gtag('config', 'G-PRHD95BBBP');
 </script>
 
 <body>
@@ -46,7 +58,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="../logistics">Logistics</a>
+                        <a class="nav-link" href="../guidelines">Guidelines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../results">2026 Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../press">Press</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../mission">Mission</a>
@@ -55,14 +76,8 @@
                         <a class="nav-link" href="../team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="../faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../results">Results</a>
-                    </li>
-                    <!-- <li class="nav-item">
                         <a class="nav-link" href="../register">Register</a>
-                    </li> -->
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://buy.stripe.com/28E4gscOSggk3rZ5C3fYY00">Donate</a>
                     </li>
@@ -70,138 +85,266 @@
             </div>
         </div>
     </nav>
-    <div class="container">
 
-        <main>
-            <section class="logistics-lead">
-                <div>
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h1 class="display-5">FAQ</h1>
-                        </div>
-                        <div class="col-lg-6">
-                            <p class="lead" style="font-family: 'Exo'; font-weight: 400; font-size: 1.4rem;">
-                                Interested in the Bee for 2026-27? Here's some information you might find useful! If you have any further questions, please reach out to us at <a style="color: black" href="mailto:team@nationalgeobee.org">team@nationalgeobee.org</a>.
-                            </p>
-                        </div>
+    <div class="container mb-5">
+        <main class="pt-4 pb-2 py-lg-5 mx-auto" style="max-width: 900px;">
+            <section class="faq-lead mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <h1 class="display-4 mb-3 mb-md-0" style="font-family: 'Libre Baskerville', serif;">FAQ</h1>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="lead mb-0"
+                            style="font-family: 'Exo', sans-serif; font-weight: 400; font-size: 1.25rem;">
+                            Interested in the Bee for 2026-27? Here's some information you might find useful!<span
+                                class="d-none"></span> If you
+                            have any further questions, please reach out to us at <a class="text-dark fw-bold"
+                                href="mailto:team@nationalgeobee.org">team@nationalgeobee.org</a>.<span
+                                class="d-none"></span>
+                        </p>
                     </div>
                 </div>
             </section>
 
-            <section class="faq-list my-5 mx-auto" style="font-family: 'Exo'">
-                <div class="mb-4">
-                    <strong>What is the National Geography Bee?</strong>
-                    <p>
-                        We’re an organization dedicated to promoting geographical knowledge and education nationwide. Our primary focus is organizing the National Geography Bee, a nationwide competition for high schoolers that aims to inspire and build curiosity about the people and places around them—including their home state, the United States as a whole, and the world at large. We are officially registered as a 501(c)3 nonprofit organization in the state of Massachusetts.
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>Are you at all tied to any of the other national geography competitions?</strong>
-                    <p>
-                        We are completely independent of and totally unaffiliated with National Geographic, which used to run a geography bee
-                        for fourth through eighth graders until 2020, as well as any other organization that runs geography competitions at any level. While
-                        we both did compete in the National Geographic competition when we were younger, we are not associated with nor do we
-                        receive any help or guidance from National Geographic.
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>When is it?</strong>
-                    <p>
-                        The timeline for the 2027 National Geography Bee will be announced in the late summer of 2026.
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>I’m a middle school teacher. Can my school participate?</strong>
-                    <p>
-                        While we hope to roll out a middle school competition at the same scale in the next few years, at this point in time the
-                        competition is for <b>high schools only.</b>
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>Is there an entry fee?</strong>
-                    <p>
-                        The entry fee for the 2027 National Geography Bee will be announced in the late summer of 2026.
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>How hard is it going to be?</strong>
-                    <p>
-                        As students progress in the competition, the questions will get harder, but the point of our competition is that—at
-                        least at the start—it is accessible to students generally, even ones who may not already be geography geeks.
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>How does it work at the school level?</strong>
-                    <p>
-                        We will be sending a detailed packet of instructions after you register, but the short version is that there will be a 30-minute written test administered at the class level, and the top performers on that test will move on to a school-wide oral bee to determine the school champion. We want to make your school's hosting experience as seamless as possible, so you won't need to take very much time out of your classes. Please reach out at <a style="color: black" href="mailto:team@nationalgeobee.org">team@nationalgeobee.org</a> for more!
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>When do I have to register by?</strong>
-                    <p>
-                        The registration deadline for the 2027 National Geography Bee will be announced in the late summer or fall of 2026.
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>I’m a high schooler who wants to participate, but my school doesn’t want to get involved. What can I
-                        do?</strong>
-                    <p>
-                        Reach out at <a style="color: black" href="mailto:team@nationalgeobee.org">team@nationalgeobee.org</a>!
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>I’m homeschooled/my child is homeschooled. How can they participate?</strong>
-                    <p>
-                        We are working on developing a homeschool infrastructure. Reach out at <a style="color: black"
-                            href="mailto:team@nationalgeobee.org">team@nationalgeobee.org</a>!
-                    </p>
-                </div>
-                <div class="mb-4">
-                    <strong>This sounds cool! Is there any way I can help out?</strong>
-                    <p>
-                        Email us at <a style="color: black" href="mailto:team@nationalgeobee.org">team@nationalgeobee.org</a>! We’re always looking for volunteers who can help us write questions, plan events,
-                        raise money, and create good vibes.
-                    </p>
-                    <p style="margin-top: 5px">
-                        <b><i>If you’re interested in making a donation,</i></b> go to our <a style="color: black" href="https://buy.stripe.com/28E4gscOSggk3rZ5C3fYY00">donation page</a> or mail a check to National Geography Bee, Inc. at
-                        PO Box 106, 15 South Main Street, Sharon, MA, 02067, or Zelle us at team@nationalgeobee.org!
-                    </p>
-                    <p style="margin-top: 5px">
-                        <b><i>If you represent a business</i></b> and want to partner with us, we’d love to chat! Email us at <a href="mailto:team@nationalgeobee.org">team@nationalgeobee.org</a>.
-                    </p>
+            <section class="faq-list" style="font-family: 'Exo', sans-serif;">
+                <div class="accordion shadow-sm" id="faqAccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                What is the National Geography Bee?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">We’re an organization dedicated to promoting geographical knowledge and
+                                    education nationwide.<span class="d-none"></span> Our primary focus is
+                                    organizing the National Geography Bee, a nationwide competition for high schoolers
+                                    that aims to inspire and build curiosity about the people and places around
+                                    them—including their home state, the United States as a whole, and the world at
+                                    large.<span class="d-none"></span> We are officially registered as a
+                                    501(c)3 nonprofit organization in the state of Massachusetts.<span
+                                        class="d-none"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                Are you tied to any of the other national geography competitions?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">We are completely independent of and totally unaffiliated with National
+                                    Geographic, which used to run a geography bee for fourth through eighth graders
+                                    until 2020, as well as any other organization that runs geography competitions at
+                                    any level.<span class="d-none"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                When is the Bee?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Registration for the 2027 National Geography Bee will close on
+                                    <b>December 18, 2026.</b><span class="d-none"></span> The school-level
+                                    competition will kick off on January 3, 2027 and run until February 26.<span class="d-none"></span>
+                                    School champions will take the National
+                                    Qualifying Test between March 1 and March 5, and the top scorers will compete in the
+                                    National Finals in late April 2027.<span class="d-none"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                Is there an entry fee?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-2">The National Geography Bee will be offering early bird discounts for
+                                    schools that sign up in the earlier weeks of our registration period.<span class="d-none"></span> <b>We
+                                        are also pleased to offer a $20 discount
+                                        to all schools that participated in 2026!</b><span class="d-none"></span> The
+                                    entry fees for the 2027 National Geography Bee are as
+                                    follows:<span class="d-none"></span></p>
+                                <ul class="mb-0">
+                                    <li>Until October 1, 2026: <b>$95</b><span class="d-none"></span></li>
+                                    <li>From October 1 until November 18: <b>$125</b><span class="d-none"></span></li>
+                                    <li>From November 18 through December 18: <b>$150</b><span class="d-none"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                How does the Bee work at the school level?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">For information on the National Geography Bee structure, please refer to
+                                    the information provided on <a href="../guidelines" class="text-dark fw-bold">our
+                                        guidelines page</a>.<span class="d-none"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                Can I see some sample questions?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">For sample questions, please refer to <a href="../guidelines"
+                                        class="text-dark fw-bold">our guidelines page</a>.<span class="d-none"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                I’m a high schooler who wants to participate, but my school isn't registered yet. What
+                                can I do?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Unfortunately, the National Geography Bee does not allow individual
+                                    students to register for the competition.<span class="d-none"></span>
+                                    Please reach out to your teacher or school administrator and encourage them to sign
+                                    up for the Bee at <a href="../register" class="text-dark fw-bold">our registration
+                                        page</a>!<span class="d-none"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                I’m a middle school teacher. Can my school participate?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Yes! However, the National Geography Bee will not be hosting any
+                                    competitions for middle schoolers past the school level.<span class="d-none"></span>
+                                    If you are a middle school teacher interested in hosting a
+                                    school-level competition, please submit <a
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLSdL7vYciBgRdLino2RKMtNRoZOEY6eBipslHd4QW5IMlud3pw/viewform"
+                                        class="fw-bold text-dark">this registration form</a>.<span
+                                        class="d-none"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                I’m homeschooled/my child is homeschooled. How can they participate?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-0">Unfortunately, the National Geography Bee at this time cannot
+                                    accommodate homeschooled students.<span class="d-none"></span> We hope to
+                                    expand over the coming years!<span class="d-none"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen"
+                                style="font-family: 'Libre Baskerville', serif;">
+                                This sounds cool! Is there any way I can help out?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-3">Email us at <a href="mailto:team@nationalgeobee.org"
+                                        class="text-dark fw-bold">team@nationalgeobee.org</a>! We’re always looking for
+                                    volunteers who can help us write questions, plan events, raise money, and create
+                                    good vibes.<span class="d-none"></span></p>
+                                <p class="mb-3"><b><i>If you’re interested in making a donation,</i></b> go to our <a
+                                        href="https://buy.stripe.com/28E4gscOSggk3rZ5C3fYY00"
+                                        class="text-dark fw-bold">donation page</a> or mail a check to National
+                                    Geography Bee, Inc. at PO Box 106, 15 South Main Street, Sharon, MA, 02067, or Zelle
+                                    us at <a href="mailto:team@nationalgeobee.org"
+                                        class="text-dark fw-bold">team@nationalgeobee.org</a>!<span
+                                        class="d-none"></span></p>
+                                <p class="mb-0"><b><i>If you represent a business</i></b> and want to partner with us,
+                                    we’d love to chat! Email us at <a href="mailto:team@nationalgeobee.org"
+                                        class="text-dark fw-bold">team@nationalgeobee.org</a>.<span
+                                        class="d-none"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </main>
     </div>
 
-    <footer class="site-footer-social text-center py-4">
-        <a href="https://instagram.com/nationalgeobee" target="_blank" class="mx-3" aria-label="Instagram">
-            <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@NationalGeographyBee" target="_blank" class="mx-3" aria-label="YouTube">
-            <i class="bi bi-youtube"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/national-geography-bee/" target="_blank" class="mx-3"
-            aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-        </a>
-        <div class="footer-contact mt-3">
-            <a href="mailto:team@nationalgeobee.org">
-                team@nationalgeobee.org
-            </a>
-            <address style="margin: 0;">
-                PO Box 106<br>
-                15 South Main Street<br>
-                Sharon, MA 02067
-            </address>
-            <div class="footnote">National Geography Bee, Inc. is a nonprofit, tax-exempt charitable organization (tax ID number 39-4625745) under Section
-            501(c)(3) of the Internal Revenue Code.<br>Donations are tax-deductible as allowed by law.</div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 
 </body>
 

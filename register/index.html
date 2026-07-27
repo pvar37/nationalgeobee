@@ -25,11 +25,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRHD95BBBP"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-PRHD95BBBP');
+    gtag('config', 'G-PRHD95BBBP');
 </script>
 
 <body>
@@ -46,7 +46,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="../logistics">Logistics</a>
+                        <a class="nav-link" href="../guidelines">Guidelines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../results">2026 Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../press">Press</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../mission">Mission</a>
@@ -55,14 +64,8 @@
                         <a class="nav-link" href="../team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../results">Results</a>
-                    </li>
-                    <!-- <li class="nav-item">
                         <a class="nav-link active" href="../register">Register</a>
-                    </li> -->
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://buy.stripe.com/28E4gscOSggk3rZ5C3fYY00">Donate</a>
                     </li>
@@ -70,48 +73,33 @@
             </div>
         </div>
     </nav>
-    <div class="container">
 
-        <main class="text-center my-5">
-            <h1 class="display-2 mb-5">Register for the Bee</h1>
+    <div class="container mb-5">
+        <main class="text-center pt-4 pb-2 py-lg-5">
+            <h1 class="display-4 mb-3" style="font-family: 'Libre Baskerville', serif;">Register for the Bee</h1>
+
             <div style="max-width: 1000px; margin: 0 auto;">
                 <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSeqxC9rV99DTXNoOOWgvmILmKeYh7P3_X4g7txxHhhbu0CrLA/viewform?embedded=true"
-                    width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" style="border:none;">
-                    Loading…
-                </iframe>
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeNiUwU1ttvhQR9z8OKlN5K4-X1UyV5wRqlUa3-k3tobmqdxQ/viewform?embedded=true"
+                    width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0"
+                    style="border: none;">Loading…</iframe>
             </div>
         </main>
     </div>
 
-    <footer class="site-footer-social text-center py-4">
-        <a href="https://instagram.com/nationalgeobee" target="_blank" class="mx-3" aria-label="Instagram">
-            <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@NationalGeographyBee" target="_blank" class="mx-3" aria-label="YouTube">
-            <i class="bi bi-youtube"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/national-geography-bee/" target="_blank" class="mx-3"
-            aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-        </a>
-        <div class="footer-contact mt-3">
-            <a href="mailto:team@nationalgeobee.org">
-                team@nationalgeobee.org
-            </a>
-            <address style="margin: 0;">
-                PO Box 106<br>
-                15 South Main Street<br>
-                Sharon, MA 02067
-            </address>
-            <div class="footnote">National Geography Bee, Inc. is a nonprofit, tax-exempt charitable organization (tax ID number 39-4625745) under Section
-            501(c)(3) of the Internal Revenue Code.<br>Donations are tax-deductible as allowed by law.</div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 
 </body>
 

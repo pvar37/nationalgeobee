@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: black;
+}
+
 .container {
     width: 95%;
     margin: 0 auto;
@@ -55,30 +59,26 @@ nav {
 }
 
 .btn-register {
-    background: #fdc533;
+    background: #000;
     color: #fff;
-    border: 2px solid white;
-    border-radius: 0.5rem;
-    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
-    transition:
-        color 0.15s,
-        background 0.15s,
-        box-shadow 0.15s,
-        transform 0.1s;
+    transition: color 0.15s, background 0.15s, box-shadow 0.15s, transform 0.1s;
     font-size: 1.2rem;
-    /* Increased font size */
-    padding: 0.65rem 1.8rem;
-    /* Increased padding */
+    padding: 0.75rem 2rem;
+    text-decoration: none;
 }
 
 .btn-register:hover,
 .btn-register:focus {
-    background: #fff;
+    background: #222;
     color: #fdc533;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     transform: translateY(-1px) scale(1.01);
-    border-color: #fdc533;
+    border-color: #222;
 }
 
 
