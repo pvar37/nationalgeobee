@@ -58,6 +58,113 @@ nav {
     text-underline-offset: 7px;
 }
 
+/* Dropdown Navigation */
+.navbar .dropdown-menu {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    padding: 0.5rem 0;
+    font-family: 'Exo', sans-serif;
+    min-width: 175px;
+    background-color: #ffffff;
+}
+
+.navbar .dropdown-item {
+    padding: 0.6rem 1.25rem;
+    font-size: 1rem;
+    color: #111;
+    font-weight: 500;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background-color: #fdc533;
+    color: #000;
+}
+
+.navbar .dropdown-item.active,
+.navbar .dropdown-item:active {
+    background-color: #000;
+    color: #fdc533;
+}
+
+.dropdown-toggle::after {
+    vertical-align: middle;
+    margin-left: 0.35rem;
+}
+
+/* Desktop hover reveal */
+@media (min-width: 992px) {
+    .navbar .nav-item.dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* Mobile dropdown adjustment */
+@media (max-width: 991.98px) {
+    .nav-item {
+        margin-left: 0;
+        margin-top: 0.35rem;
+    }
+    .navbar .navbar-nav .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar .dropdown-menu {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar .dropdown-item {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0.35rem;
+        padding-bottom: 0.35rem;
+        background-color: transparent;
+        color: #000;
+        font-size: 1rem;
+    }
+    .navbar .dropdown-item:hover,
+    .navbar .dropdown-item:focus {
+        background-color: transparent;
+        color: #000;
+        text-decoration: underline;
+    }
+    .navbar .dropdown-item.active,
+    .navbar .dropdown-item:active {
+        background-color: transparent;
+        color: #000;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+}
+
+/* Practice Page */
+.practice-thumb {
+    width: 105px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.practice-title {
+    font-size: 1.25rem;
+}
+
+@media (min-width: 576px) {
+    .practice-thumb {
+        width: 140px;
+        height: 95px;
+    }
+    .practice-title {
+        font-size: 1.4rem;
+    }
+}
+
 .btn-register {
     background: #000;
     color: #fff;
